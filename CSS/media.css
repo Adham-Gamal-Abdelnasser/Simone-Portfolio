@@ -1,0 +1,216 @@
+:root {
+    /* ======standard variables======== */
+    /* colors */
+    --main-color: #20c997;
+    --hover-color-btn: #1baa80;
+    --txt-danger: #dc3545;
+    --star: #ffc107;
+    --most-common: #fff;
+    --black-layer: rgba(33,37,41,0.8);
+    --grayed: #555;
+    --rgba-grayed: rgba(85,85,85,0.1); 
+    /* fonts */
+    --main-font-fam: 'Poppins', sans-serif;
+}
+
+
+@media (min-width: 576px) {
+    /* =================== S T A N D A R D S===============*/
+        .container {
+            max-width: 548px;
+        }
+    /* =================== S T A N D A R D S===============*/
+    
+}
+
+@media (max-width: 992px) {
+    body {
+        overflow-x: hidden;
+    }
+    /* =================== S T A N D A R D S===============*/
+        .container {
+            max-width: 720px;
+        }
+        .title h2 {
+            font-size: 2.4rem;
+        }
+        .title::after{
+            top: 150%;
+        }
+    /* =================== S T A N D A R D S===============*/
+
+    /* =================== N A V B A R  ===============*/
+    nav {
+        position: relative;
+    }
+    nav .nav-links {
+        position: absolute;
+        width: 100%;
+        top: calc(90%);
+        left: 0;
+        flex-direction: column;
+        background-color: var(--main-color);
+        gap: 1px;
+        display: none;
+    }
+    nav .nav-links li {
+        background-color: #121212cc;
+    }
+    nav .menu {
+        display: block;
+    }
+    .nav-links:target {
+        display: flex;
+    }
+    /* =================== N A V B A R  ===============*/
+    /* =================== A B O U T  ===============*/
+    .about .pers {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .pers .para {
+        text-align: center;
+    }
+    .about .container .row:last-child {
+        justify-content: center;
+    }
+    .about .container .row:last-child div  {
+        width: 20%;
+    }
+    /* =================== A B O U T  ===============*/
+    
+    
+
+    /* =================== P O R T F O L I O  ===============*/
+    .portfolio .projects {
+        height: 244vh;
+        align-content: center;
+    }
+    .portfolio .projects .item {
+        width: 40%;
+    }
+    .photo {
+        order: 0;
+    }
+    .sticker {
+        order: 1;
+    }
+    .pink {
+        order: 2;
+    }
+    .fan {
+        order: 3;
+    }
+    .phone {
+        order: 4;
+    }
+    .note {
+        order: 5;
+    }
+    .charger {
+        order: 6;
+    }
+    /* =================== P O R T F O L I O  ===============*/
+    /* =================== S E R V I C E  ===============*/
+    .service .container .row:last-child .item {
+        width: 100%;
+    }
+    /* =================== S E R V I C E  ===============*/
+    /* =================== S U M M A R Y ===============*/
+    .summary .container .row:nth-child(2),
+    .summary .container .row:last-child {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .summary .container .row:last-child .col {
+        width: 60%;
+    }
+    .summary .container .row:last-child .col {
+        width: 100%;
+    }
+    /* =================== S U M M A R Y ===============*/
+    /* =================== T E S T I M O N I A L ===============*/
+    .testimonial .speaks {
+        padding: 20px;
+    }
+    .testimonial .speaks .speak {
+        width: 100%;
+    }
+    /* =================== T E S T I M O N I A L ===============*/
+    /* =================== C O N T A C T ===============*/
+    .contact .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .name-email {
+        flex-direction: column;
+    }
+    .name-email input {
+        width: 100%;
+    }
+    .contact .row .col:last-child {
+        width: 100%;
+    }
+    /* =================== C O N T A C T ===============*/  
+}
+
+
+
+@media (max-width: 575px) {
+        /* =================== P O R T F O L I O  ===============*/
+        .portfolio .projects {
+            height: 670vh;
+            align-content: center;
+        }
+        .portfolio .projects .item {
+            width: 95%;
+        }
+        .photo {
+            order: 0;
+        }
+        .sticker {
+            order: 1;
+        }
+        .pink {
+            order: 2;
+        }
+        .fan {
+            order: 3;
+        }
+        .phone {
+            order: 4;
+        }
+        .note {
+            order: 5;
+        }
+        .charger {
+            order: 6;
+        }
+        /* =================== P O R T F O L I O  ===============*/
+        .title h2 {
+            font-size: 2rem;
+        }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
